@@ -15,8 +15,4 @@ clarity_wasm_mode = false
 show_timings = false
 
 [repl.analysis]
-passes = []
-check_checker = false
-
-[repl.analysis.passes]
-check_checker = false
+passes = ["check_checker"]
