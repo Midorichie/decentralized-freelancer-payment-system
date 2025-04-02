@@ -1,12 +1,17 @@
 [project]
 name = "decentralized-freelancer-payment-system"
 authors = ["Your Name"]
-description = "A decentralized escrow system for freelancer payments"
+description = "A decentralized escrow system for freelancer payments with reputation tracking"
 telemetry = false
 requirements = []
 
 [contracts.escrow]
 path = "contracts/escrow.clar"
+clarity_version = 2
+epoch = 2.1
+
+[contracts.reputation]
+path = "contracts/reputation.clar"
 clarity_version = 2
 epoch = 2.1
 
